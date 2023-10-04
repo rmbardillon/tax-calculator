@@ -1,21 +1,10 @@
 import React from 'react'
 import { Card, CardContent, CardHeader } from './ui/card'
 import Employee from "@/lib/Employee";
+import { displayCurrencyFormat } from "@/lib/helper/utility";
 
 type Props = {
     salary: number
-}
-
-function displayCurrencyFormat(value: number): string {
-    const decimalFormat: Intl.NumberFormat = new Intl.NumberFormat(
-        "en-PH",
-        {
-            style: "currency",
-            currency: "PHP",
-            minimumFractionDigits: 2,
-        }
-    );
-    return decimalFormat.format(value);
 }
 
 export default function ResultBox(props : Props) {
