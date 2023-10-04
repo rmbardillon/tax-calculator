@@ -15,7 +15,7 @@ export default function Home() {
         <>
             <main className="container flex flex-col min-h-screen">
                 <Navbar />
-                <div className="border rounded-lg shadow-xl p-12">
+                <div className="border rounded-lg shadow-xl p-4 md:p-6 lg:p-10 xl:p-12">
                     <SalaryForm onSalaryChange={handleSalaryChange} />
                     <ResultBox salary={salary} />
                 </div>
