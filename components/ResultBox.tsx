@@ -71,12 +71,12 @@ export default function ResultBox(props : Props) {
 					<CardContent>
 						<div className="flex justify-between items-baseline">
 							<h1>Salary</h1>
-							<h2>{props.salary == 0 ? "" : props.salary}</h2>
+							<h2>{props.salary == 0 ? "" : displayCurrencyFormat(props.salary)}</h2>
 						</div>
 						<div className="flex justify-between items-baseline">
 							<h1>Total Contribution</h1>
 							<h2>
-								{props.salary == 0 ? "" : totalContribution}
+								{props.salary == 0 ? "" : displayCurrencyFormat(totalContribution)}
 							</h2>
 						</div>
 						<div className="flex justify-between items-baseline">
